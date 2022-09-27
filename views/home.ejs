@@ -4,10 +4,10 @@
 <p><%= content %> </p>
 
 <% posts.forEach(function(element){%>
-    <h1><%= element.title %> </h1>
+    <h1><%= element.postTitle %> </h1>
     <p>
-        <%= element.body.substring(0,100)+"..." %> 
-        <a href="/blog/<%= element.title %> ">Read More</a>
+        <%= element.postContent.substring(0,100)+"..." %> 
+        <a href="/blog/<%= element._id%> ">Read More</a>
     </p>
    <%  });%> 
 
